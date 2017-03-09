@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="https://blackrockdigital.github.io/startbootstrap-1-col-portfolio/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+  font: 10px sans-serif;
+ /* background-color: #000050;
+  */background-color : #000050;
+  color:grey;
+}
+
+svg text{
+  fill:grey;
+  font-size:11px;
+}
+svg .values text{
+  pointer-events:none;
+  stroke-width: 0.5px;
+}
+.groups:hover{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.tooltip{
+  fill:black;
+  font-size:17px;
+}
+</style>
+
+<body>
+<a href="buble.html">buble</a>
+
+<p> mouse over the team to see the points the team has scored to other teams </p>
+<div class="row">
+            <div class="col-md-7" style=" margin: 20;" >
+              <h1> NBA OFFENCE  </h1>
+              <div id="chordChart"></div>
+            </div>
+            <div class="col-md-5">
+                <h1>NBA TEAMS</h1>
+                    <div id="toolbar">
+                       <a href="#" id="all" class="button active">All Teams</a>
+                       <a href="#" id="year" class="button">Short By Conference</a>
+                    </div>
+                <div id="vis"></div>
+            </div>
+</div>
+
+<div class="row">
+            <h1> Offence Record when team is playing home</h1>
+            <div class="col-md-7">
+              <div id="offenceHomeId"></div>
+            </div>
+            <div class="col-md-5">
+                <h3>Hey dog</h3>
+                <h4>whats up</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+</div>
+
+<div class="row">
+            <h1> Offence Recor when team is playing away home</h1>
+            <div class="col-md-7">
+              <div id="offenceAwayId"></div>
+            </div>
+            <div class="col-md-5">
+                <h3>Hey dog</h3>
+                <h4>whats up</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+</div>
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+<script src="js/toolTip.js"></script>
+<script src="js/allPlayersBubleChart.js"></script>
+
+<script src="nbaOffence.min.js"> </script>

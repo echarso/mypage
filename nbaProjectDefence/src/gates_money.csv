@@ -1,0 +1,31 @@
+grant_title,id,organization,total_amount,group,Grant start date,start_month,start_day,start_year,url
+Boston Celtics,1,Eastern Conference,32,low,2/4/2009,2,4,2009,images/bos.png
+New Jersey Nets,2,Eastern Conference,31,low,2/4/2009,2,4,2009,images/njn.png
+New York Knicks,3,Eastern Conference,30,low,2/4/2009,2,4,2009,images/nyk.png
+Philadelphia 76ers,4,Eastern Conference,29,low,2/4/2009,2,4,2009,images/phi.png
+Toronto Raptors,5,Eastern Conference,29,low,2/4/2009,2,4,2009,images/tor.png
+Chicago Bulls,6,Eastern Conference,28,low,2/4/2009,2,4,2009,images/chi.png
+Cleveland Cavaliers,7,Eastern Conference,27,low,2/4/2009,2,4,2009,images/cle.png
+Detroit Pistons,8,Eastern Conference,23,low,2/4/2009,2,4,2009,images/det.png
+Indiana Pacers,9,Eastern Conference,21,low,2/4/2009,2,4,2009,images/ind.png
+Milwaukee Bucks,10,Eastern Conference,18,low,2/4/2009,2,4,2009,images/mil.png
+Atlanta Hawks,11,Eastern Conference,18,low,2/4/2009,2,4,2009,images/atl.png
+Charlotte Bobcats,12,Eastern Conference,17,low,2/4/2009,2,4,2009,images/hor.png
+Miami Heat,13,Eastern Conference,14,low,2/4/2009,2,4,2009,images/mia.png
+Orlando Magic,14,Eastern Conference,13,low,2/4/2009,2,4,2009,images/orl.png
+Washington Wizards,15,Eastern Conference,11,low,2/4/2009,2,4,2009,images/was.png
+Minnesota Timberwolves,1,Western Conference,43,low,2/4/2009,2,4,2009,images/min.png
+Oklahoma City Thunder,2,Western Conference,42,low,2/4/2009,2,4,2009,images/okc.png
+Portland Trail Blazers,3,Western Conference,42,low,2/4/2009,2,4,2009,images/por.png
+Utah Jazz,4,Western Conference,39,low,2/4/2009,2,4,2009,images/uta.png
+Golden State Warriors,5,Western Conference,31,low,2/4/2009,2,4,2009,images/gol.png
+Los Angeles Clippers,6,Western Conference,21,low,2/4/2009,2,4,2009,images/cli.png
+Los Angeles Lakers,7,Western Conference,12,low,2/4/2009,2,4,2009,images/lak.png
+Phoenix Suns,8,Western Conference,12,low,2/4/2009,2,4,2009,images/sun.png
+Sacramento Kings,9,Western Conference,8,low,2/4/2009,2,4,2009,images/sac.png
+Dallas Mavericks,10,Western Conference,8,low,2/4/2009,2,4,2009,images/dal.png
+Houston Rockets,11,Western Conference,7,low,2/4/2009,2,4,2009,images/hou.png
+Memphis Grizzlies,12,Western Conference,7,low,2/4/2009,2,4,2009,images/mem.png
+New Orleans,13,Western Conference,7,low,7/4/2009,2,4,2009,images/new.png
+San Antonio Spurs,14,Western Conference,7,low,2/4/2009,2,4,2009,images/san.png
+Denver Nuggets,15,Western Conference,7,low,2/4/2009,2,4,2009,images/de.png

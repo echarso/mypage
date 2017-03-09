@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "boxes",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "d3": "^3.1.0",
+    "webpack": "^1.12.9",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --content-base src --inline --hot"
+ },
+  "author": "",
+  "license": "ISC"
+}

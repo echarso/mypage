@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+  font: 10px sans-serif;
+}
+
+svg text{
+  fill:grey;
+  font-size:11px;
+}
+svg .values text{
+  pointer-events:none;
+  stroke-width: 0.5px;
+}
+.groups:hover{
+  cursor:pointer;
+  font-weight:bold;
+}
+</style>
+
+<body>
+<h1> European Debt </h1>
+<p> mouse over the country to see the debt of that country to the other</p>
+<div id="chordChart"></div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+<script>
+
+var data = [
+['GREECE','ITALY',4]
+,['GREECE','SPAIN',3]
+,['GREECE','FRANCE',3]
+,['GREECE','GERMANY',2]
+,['GREECE','UK',2]
+,['GREECE','HOLLAND',4]
+,['ITALY','GREECE',4]
+,['ITALY','SPAIN',7]
+,['ITALY','FRANCE',3]
+,['ITALY','GERMANY',2]
+,['ITALY','UK',2]
+,['ITALY','HOLLAND',6]
+,['SPAIN','FRANCE',4]
+,['SPAIN','GREECE',5]
+,['SPAIN','ITALY',2]
+,['SPAIN','GERMANY',2]
+,['SPAIN','UK',2]
+,['SPAIN','HOLLAND',3]
+,['FRANCE','GREECE',2]
+,['FRANCE','ITALY',8]
+,['FRANCE','SPAIN',2]
+,['FRANCE','GERMANY',2]
+,['FRANCE','UK',2]
+,['FRANCE','HOLLAND',3]
+,['GERMANY','GREECE',1.6]
+,['GERMANY','ITALY',2]
+,['GERMANY','SPAIN',3]
+,['GERMANY','FRANCE',3]
+,['GERMANY','UK',2]
+,['GERMANY','HOLLAND',4]
+,['UK','GREECE',3]
+,['UK','ITALY',2]
+,['UK','SPAIN',5.5]
+,['UK','FRANCE',6]
+,['UK','GERMANY',7]
+,['UK','HOLLAND',8]
+,['HOLLAND','GREECE',8]
+,['HOLLAND','ITALY',8]
+,['HOLLAND','FRANCE',8]
+,['HOLLAND','SPAIN',8]
+,['HOLLAND','UK',8]
+
+];
+
+var colors = {
+"GREECE": "#da4480"
+,"ITALY": "#7f5acd"
+,"SPAIN": "#aab740"
+,"FRANCE": "#50a26e"
+,"UK":"#45c0bc"
+,"GERMANY": "#4e7bda"
+,"HOLLAND":  "#d49d3c"
+
+};
+
+
+/*
+
+var colors = {
+"Arsenal":         "#da4480"
+,"Aston Villa":    "#5ab449"
+,"Bournemouth":    "#7f5acd"
+,"Chelsea":        "#aab740"
+,"Crystal Palace": "#ce58c0"
+,"Everton":        "#50a26e"
+,"Leicester City": "#d1434b"
+,"Liverpool":      "#45c0bc"
+,"Manchester City":"#ce5929"
+,"Manchester Utd": "#4e7bda"
+,"Newcastle Utd":  "#d49d3c"
+,"Norwich City":   "#6660a3"
+,"Southampton":    "#7b853c"
+,"Stoke City":     "#b58dde"
+,"Sunderland":     "#97622e"
+,"Swansea City":   "#609dd6"
+,"Tottenham":      "#e29074"
+,"Watford":        "#9c4b88"
+,"West Bromwich":  "#ab505f"
+,"West Ham Utd":   "#dc85b6"
+};
+
+*/
+var sortOrder =[
+"GREECE"
+,"ITALY"
+,"SPAIN"
+,"FRANCE"
+];
+
+function sort(a,b){ return d3.ascending(sortOrder.indexOf(a),sortOrder.indexOf(b)); }
+
+var ch = viz.ch().data(data)
+      .padding(.08)
+      .sort(sort)
+	  .innerRadius(210)
+	  .outerRadius(230)
+	  .duration(1000)
+	  .chordOpacity(0.3)
+	  .labelPadding(.03)
+      .fill(function(d){ return colors[d];});
+     // .on('mouseover',function(d){ console.log(d)});
+
+var width=1000, height=1000;
+
+var svg = d3.select("#chordChart").append("svg").attr("height",height).attr("width",width);
+
+svg.append("g").attr("transform", "translate(300,250)").call(ch);
+
+// adjust height of frame in bl.ocks.org
+//d3.select(self.frameElement).style("height", height+"px").style("width", width+"px");     
+</script>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://d3-geomap.github.io/d3-geomap/css/d3.geomap.css" rel="stylesheet">
+        <script src="https://d3-geomap.github.io/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+        <script src="https://d3-geomap.github.io/d3-geomap/js/d3.geomap.min.js"></script>
+    </head>
+    <body>
+        <div id="map" style="width :800px;height:900px;"></div>
+    </body>
+</html>
+
+<script>
+
+var format = function(d) {
+    d = d / 1000000;
+    return d3.format(',.02f')(d) + 'M';
+}		
+
+
+var map = d3.geomap.choropleth()
+    .geofile('https://d3-geomap.github.io/d3-geomap/topojson/world/countries.json')
+     .colors(colorbrewer.YlGn[9])
+    .column('YR2013')
+    .format(format)
+    .legend(true)
+    .unitId('Country Code');
+    /*
+    .on('click', function(geography) {
+ 	console.log(geography);
+      var m = {};
+      m[geography.id] = '#000000';
+      datamap.updateChoropleth(m);
+  })*/
+
+d3.csv('mapTouristData.csv', function(error, data) {
+    d3.select('#map')
+        .datum(data)
+        .call(map.draw, map);
+
+       // .enter()
+     d3.selectAll("path")
+        .on('click', function(d) {
+ 	           console.log(d);
+         });
+});
+
+
+</script>

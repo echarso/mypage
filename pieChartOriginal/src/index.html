@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="https://blackrockdigital.github.io/startbootstrap-1-col-portfolio/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+<style>
+body {
+  font: 15px  bold ;
+  font-style: italic;
+  background-color: #000050;
+ /* background-color : lightsteelblue; */
+  color:lightsteelblue ;
+}
+
+svg text{
+  fill:grey;
+  font-size:15px;
+  font-family: "Lato";
+}
+svg .values text{
+  pointer-events:none;
+  stroke-width: 0.5px;
+}
+.groups:hover{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.axis .domain {
+  display: none;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  color:black;
+  border-color: black;
+  width: 200px;
+  height: 90px;
+  padding: 2px;
+  font: 16px sans-serif;
+  background: white;
+  border: 2px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+div.tooldiv{
+  position: absolute;
+  text-align: center;
+  width: 450px;
+  height:450px;
+  padding: 2px;
+  font: 16px sans-serif;
+  border: 2px;
+  border-radius: 8px;
+  background-color: #F8F8FF;
+  color:black;
+  font-size:16px;
+  font-weight:bold;
+  border-color: grey;
+  opacity: 0;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+</style>
+<div class="row">
+            <div class="col-md-12" >
+              <h1 style="text-align: center;"> de logo</h1>
+                
+            </div>
+</div>
+<div class="row">
+           <div class="col-md-2" >
+                
+              </div>
+            <div class="col-md-6" style="background-color: #F8F8FF;border: 2px;box-shadow: 10px 10px 5px #888888; color:#000050;" >
+                 <h1 >Aerodromio tis athinas vs hrakleiou</h1>
+                <p> Μια συγρκιση του ....
+                </p>
+                <svg id="aiportTotal2" width="560" height="500"></svg>
+            </div>
+            <div>
+              <div class="col-md-1" >
+                <div class="tooldiv" id="tooldivId" style="background-color: #F8F8FF;">  
+                    <svg id="innerBar"  width="260" height="200"></div>
+                </div>
+              </div>
+            </div>
+</div>
+
+<script src="client.min.js"></script>

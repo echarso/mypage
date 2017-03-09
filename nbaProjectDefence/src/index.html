@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="https://blackrockdigital.github.io/startbootstrap-1-col-portfolio/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+  font: 16px sans-serif;
+  background-color : #000050;
+  color:grey;
+}
+
+svg text{
+  fill:grey;
+  font-size:16px;
+  font-style: bold;
+}
+svg .values text{
+  pointer-events:none;
+  stroke-width: 0.5px;
+}
+.groups:hover{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.tooltip {
+  background-color: lightgrey;
+  color:black;
+  font-size:16px;
+  font-weight:bold;
+  border-color: grey;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+.standing {
+  background-color: white;
+  color:grey;
+  font-size:16px;
+  font-weight:bold;
+  border-color: grey;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+
+.teamDetails {
+  position: absolute;
+  text-align: center;
+  width: 450px;
+ /* height:450px;*/
+  padding: 2px;
+  border: 2px;
+  border-radius: 8px;
+  background-color: #F8F8FF;
+  font-size:16px;
+  font-weight:bold;
+  border-color: grey;
+  opacity: 0;
+  box-shadow: 10px 10px 5px #888888;
+}
+</style>
+ 
+
+<div class="row">
+            <div class="col-md-6" style=" margin-left: 20;" >
+              <div class="row">
+                <div class="col-md-12" style=" margin-left: 20;" >
+                    <h1 style="text-align: center;"> NBA Defence  </h1>
+                    <div id="chordChart"></div>
+                </div>          
+              </div>
+              <div class="row">
+                <div class="col-md-12" style=" margin-left: 40;" >
+                    <h1 style="text-align: center;"> Defence Home Record</h1>
+                    <div id="defenceHomeId"></div>
+                </div>          
+              </div>
+              <div class="row">
+                <div class="col-md-12" style=" margin-left: 40;" >
+                    <h1 style="text-align: center;"> Defence Away Record</h1>
+                    <div id="defenceAwayId"></div>
+                </div>          
+              </div>
+            </div>
+            <div class="col-md-5">
+                <h1 style="text-align: center;">NBA TEAMS</h1>
+                    <div id="toolbar">
+                       <a href="#" id="all" class="button active" style="margin-left:60px">All Teams</a>
+                       <a href="#" id="year" class="button" style="margin-left:200px">Short By Conference</a>
+                    </div>
+                <div id="vis"></div>
+                <div class="teamDetails">teams details</div>
+            </div>
+</div>
+
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+<script src="js/toolTip.js"></script>
+<!--script src="js/allPlayersBubleChart.js"></script-->
+
+<script src="nbaDefence.min.js"> </script>
